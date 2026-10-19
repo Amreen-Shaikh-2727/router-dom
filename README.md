@@ -1,16 +1,80 @@
-# React + Vite
+# React Router Navigation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
 
-Currently, two official plugins are available:
+This project is a React application that demonstrates navigation between multiple pages using React Router DOM. It includes a blog-style Home page, a Dashboard page, and separate Login and Signup pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Navigation between pages using React Router DOM
+- Blog-style Home page with article content
+- Dashboard page with a sidebar and popular posts
+- Login form with email and password fields
+- Signup form with name, email, and password fields
+- Responsive layout for different screen sizes
+- Shared navigation bar and footer
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript
+- React Router DOM
+- CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+│   ├── BlogSidebar.jsx
+│   ├── Footer.jsx
+│   └── Navbar.jsx
+├── pages/
+│   ├── Dashboard.jsx
+│   ├── Home.jsx
+│   ├── Login.jsx
+│   └── Signup.jsx
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+```
+
+## How to Run
+
+1. Clone or download the project.
+2. Open the project folder in VS Code.
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Install React Router DOM:
+
+   ```bash
+   npm install react-router-dom
+   ```
+
+5. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open the local URL displayed in the terminal.
+
+## Application Routes
+
+| Route | Page |
+|---|---|
+| `/home` | Home |
+| `/dashboard` | Dashboard |
+| `/login` | Login |
+| `/signup` | Signup |
+
+## Note
+
+The Login and Signup forms currently provide basic form validation. User authentication and account registration are not connected to a backend.
